@@ -1,0 +1,14 @@
+C:\Users\Tonda\Seminarka\bin\Debug\net7.0\Seminarka.exe
+C:\Users\Tonda\Seminarka\bin\Debug\net7.0\Seminarka.deps.json
+C:\Users\Tonda\Seminarka\bin\Debug\net7.0\Seminarka.runtimeconfig.json
+C:\Users\Tonda\Seminarka\bin\Debug\net7.0\Seminarka.dll
+C:\Users\Tonda\Seminarka\bin\Debug\net7.0\Seminarka.pdb
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\Seminarka.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\Seminarka.AssemblyInfoInputs.cache
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\Seminarka.AssemblyInfo.cs
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\Seminarka.csproj.CoreCompileInputs.cache
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\Seminarka.dll
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\refint\Seminarka.dll
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\Seminarka.pdb
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\Seminarka.genruntimeconfig.cache
+C:\Users\Tonda\Seminarka\obj\Debug\net7.0\ref\Seminarka.dll
