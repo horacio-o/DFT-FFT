@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tonda\\Seminarka\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96B5B8FF-5E58-4691-A976-5CA2A6E20E79}|Seminarka.csproj|c:\\users\\tonda\\seminarka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96B5B8FF-5E58-4691-A976-5CA2A6E20E79}|Seminarka.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96B5B8FF-5E58-4691-A976-5CA2A6E20E79}|Seminarka.csproj|c:\\users\\tonda\\seminarka\\oof.wav||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{96B5B8FF-5E58-4691-A976-5CA2A6E20E79}|Seminarka.csproj|solutionrelative:oof.wav||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Oof.wav",
+              "DocumentMoniker": "C:\\Users\\Tonda\\Seminarka\\Oof.wav",
+              "RelativeDocumentMoniker": "Oof.wav",
+              "ToolTip": "C:\\Users\\Tonda\\Seminarka\\Oof.wav",
+              "RelativeToolTip": "Oof.wav",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJjSURBVDhPjZNNSFRRFMf/933Nm2/HhV8j9sEohahgpqFZIn0shCELoqhFC9NVYFGgUBEEQdLCglKMVkUbF0lJEATRRomQhhaOWUrN6GjKfJSGM/Nm3uu\u002B500bXkU/OJxz7z3ncM/9v4d/EeiSLwfOCtfY0oymaSwy8\u002Bi4p3ShG9ryBWgPjzi3sW0THPMm1LKmA5y3ClpJJbTt\u002Bw6xbRN/baA1dPqX20cx1/YUqboOP9s28ccGN28POFx5\u002Bfs1IoBwIuwOV1PfnYE8dpwDz3wOJ4ojLeX52U4Hn4a4Fgb/6bW88mZ4bPT94jRL2UBgPgd3LOgvefsOrgAguel6GZhfsuhjPFvP2MQ0wr2TFbxLSx7maWtdI5WaZAOcaurg4KkdopH0G6YGid3dldnao76MeyuyogMZ3oG0uwxKTduWeN25apa2AWHeYObBMc/zRE23t6r1anG\u002BDVI2SR\u002BRYEUh\u002BPI1gcXg\u002BI3y\u002BeFb7Xcn46xk8wahx2f2ymNPQu7Y7BXRakeWSEhZPEhLHqicDEG2Qlr63FswNRl62bOnlZVtqtDbQi7GZhaa18KzpNC2ClHkwGVS4NNxiIkPsAdHoI6PEFFJSQWFlvTgeNx4UGOEyKvrvH2ifyr6MeoLh4EiqrhNphIJBKKNgCcqvkeB6QjgLaXnO90hpbnXV9jYoxgjWJGosQhRX0kFUF0FuGgDkarA03\u002BFU1T6DlSFIqC\u002BAfDV0tjzrcwp/9il1xo3UF7U9wmZuUt6jDVqq0a0rqGe8etrsVNzUNMHtxb3k8aJ80aD0dNyhyeTvK/H/0vKJXe1DiWHfgIp07cnbNbvtgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-28T18:32:20.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tonda\\Seminarka\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Tonda\\Seminarka\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:50:29.091Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
