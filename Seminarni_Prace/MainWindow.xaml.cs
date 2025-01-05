@@ -36,7 +36,7 @@ namespace Appka
             {
                 // Open document
                 string filename = dialog.FileName;
-                Logic.FrequencyData[] frequencyDatas = Logic.GetInfo(filename);
+                Logic.FrequencyData[] frequencyDatas = Logic.DoTransform(filename);
             }
         }
 

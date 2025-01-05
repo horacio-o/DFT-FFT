@@ -12,7 +12,7 @@ namespace Appka
 {
     internal class Logic
     {
-        public static FrequencyData[] GetInfo(string filename)
+        public static FrequencyData[] DoTransform(string filename)
         {   
             using (FileStream stream = File.OpenRead(filename))
             {
@@ -50,7 +50,7 @@ namespace Appka
 
             return spectrum;
         }
-        
+
         public struct FrequencyData
         {
             public float Frequency;
@@ -64,6 +64,34 @@ namespace Appka
                 Phase = offset;
             }
         }
+
+
+
+        //FFT 
+
+        public static Vector<Complex> FFT()
+        {
+
+        }
+
+        public static (float[], float[]) EvenOddArray(float[] fullArray, int len)
+        {
+            float[] Aodd = new float[len / 2];
+            float[] Aeven = new float[len / 2]; ;
+            for (int i = 0; i < len; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    Aodd[(i - 1) / 2] = fullArray[i];
+                }
+                else
+                {
+                    Aeven[i / 2] = fullArray[i]; 
+                }
+            }
+            return (Aodd, Aeven);
+        }
+
         static Dictionary<string, long> WavChunkLookUp(BinaryReader reader) //Metoda vracející dictionary<string, long> 
         {
         string RIFFID = string.Join("", reader.ReadChars(4)); //přečte první 4 chary souboru a uloží je jako RIFFId, potom posune polohu readeru o 4 dál
