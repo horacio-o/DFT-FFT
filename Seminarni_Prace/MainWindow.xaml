@@ -7,31 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="48" Margin="28,10,0,0" VerticalAlignment="Top" Width="142" Click="Button_Click"/>
-        <TextBox x:Name="lowerBoundTxtBox" HorizontalAlignment="Left" Height="46" Margin="290,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" ToolTip="Lower Frequency(number)"/>
-        <Label Content="Zadej číslo" HorizontalAlignment="Left" Height="32" Margin="290,26,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="0"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="0"/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <TextBox x:Name="upperBoundTxtBox" HorizontalAlignment="Left" Height="46" Margin="472,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" ToolTip="Lower Frequency(number)"/>
-        <Label Content="Zadej číslo" HorizontalAlignment="Left" Height="32" Margin="472,26,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="0"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="0"/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Button x:Name="Submit" HorizontalAlignment="Left" Height="100" Margin="641,26,0,0" VerticalAlignment="Top" Width="117" Click="Submit_Click" Content="Potvrdit"/>
-        <Label x:Name="SadFace" Content=":(" HorizontalAlignment="Left" Height="57" Margin="299,126,0,0" VerticalAlignment="Top" Width="316" Visibility="Collapsed"/>
-
+        <Button Content="DFT" HorizontalAlignment="Left" Height="48" Margin="28,10,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click"/>
+        <Button Content="FFT" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Height="48" Width="145" Click="Button_Click_1"/>
     </Grid>
 </Window>

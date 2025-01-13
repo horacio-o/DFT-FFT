@@ -36,21 +36,25 @@ namespace Appka
             {
                 // Open document
                 string filename = dialog.FileName;
-                Logic.FrequencyData[] frequencyDatas = Logic.DoTransform(filename);
+                Logic.FrequencyData[] frequencyDatas = Logic.DoDFT(filename);
             }
         }
-
-        private void Submit_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            int minimum = int.Parse(lowerBoundTxtBox.Text);
-            int maximum = int.Parse(upperBoundTxtBox.Text);
-            if (minimum > maximum)
+            // Configure open file dialog box
+            var dialog = new Microsoft.Win32.OpenFileDialog();
+            dialog.DefaultExt = ".wav"; // Default file extension
+            dialog.Filter = "Audio file format (.wav)|*.wav"; // Filter files by extension
+
+            // Show open file dialog box
+            bool? result = dialog.ShowDialog();
+
+            // Process open file dialog box results
+            if (result == true)
             {
-                SadFace.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                SadFace.Visibility = Visibility.Collapsed;
+                // Open document
+                string filename = dialog.FileName;
+                float[] frequencyDatas = Logic.DoFFT(filename);
             }
         }
     }

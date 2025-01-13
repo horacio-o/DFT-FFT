@@ -12,7 +12,7 @@ namespace Appka
 {
     internal class Logic
     {
-        public static FrequencyData[] DoTransform(string filename)
+        public static FrequencyData[] DoDFT(string filename)
         {   
             using (FileStream stream = File.OpenRead(filename))
             {
@@ -20,6 +20,16 @@ namespace Appka
                 SampleArray sampleArray = InspectWav(reader);
                 FrequencyData[] fourie = DFT(sampleArray.samples, sampleArray.sampleRate);
                 return fourie;
+            }
+        }
+        public static float[] DoFFT(string filename)
+        {
+            using (FileStream stream = File.OpenRead(filename))
+            {
+                BinaryReader reader = new BinaryReader(stream);
+                SampleArray sampleArray = InspectWav(reader);
+                float[] fourier = FFT(sampleArray.samples);
+                return fourier;
             }
         }
         public static FrequencyData[] DFT(float[] samples, int sampleRate)
@@ -69,27 +79,32 @@ namespace Appka
 
         //FFT 
 
-        public static Vector<Complex> FFT()
+        public static float[] FFT(float[] samples)
         {
-
+            int N = samples.Length;
+            if (N == 1)
+            {
+                return samples;
+            }
+            int M = N / 2;
+            (float[], float[]) eoArrays = EvenOddArray(samples);
+            float[] NextStep_even = FFT(eoArrays.Item1);
+            float[] NextStep_odd = FFT(eoArrays.Item2);
+            float[] frequencies = new float[N];
+            for (int i = 0; i < N/2; i++)
+            {
+                float exponential = (float)Math.Exp(-2  * Math.PI * i / N) * NextStep_odd[i];
+                frequencies[i] = NextStep_even[i] + exponential;
+                frequencies[i + N / 2] = NextStep_even[i] - exponential;
+            }
+            return frequencies;
         }
 
-        public static (float[], float[]) EvenOddArray(float[] fullArray, int len)
+        public static (float[], float[]) EvenOddArray(float[] fullArray) //rozdělí Array na array se sudými indexy Arraye a s lichými
         {
-            float[] Aodd = new float[len / 2];
-            float[] Aeven = new float[len / 2]; ;
-            for (int i = 0; i < len; i++)
-            {
-                if (i % 2 == 1)
-                {
-                    Aodd[(i - 1) / 2] = fullArray[i];
-                }
-                else
-                {
-                    Aeven[i / 2] = fullArray[i]; 
-                }
-            }
-            return (Aodd, Aeven);
+            float[] aEven = fullArray.Where((x, i) => i % 2 == 0).ToArray();
+            float[] aOdd = fullArray.Where((x, i) => i % 2 != 0).ToArray();
+            return (aEven, aOdd);
         }
 
         static Dictionary<string, long> WavChunkLookUp(BinaryReader reader) //Metoda vracející dictionary<string, long> 
