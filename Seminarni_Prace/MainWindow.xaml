@@ -7,7 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="DFT" HorizontalAlignment="Left" Height="48" Margin="28,10,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click"/>
-        <Button Content="FFT" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Height="48" Width="145" Click="Button_Click_1"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="187*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="DFT" HorizontalAlignment="Left" Height="48" Margin="44,0,0,0" VerticalAlignment="Center" Width="146" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="FFT" HorizontalAlignment="Left" Margin="212,0,0,0" VerticalAlignment="Center" Height="48" Width="144" Click="Button_Click_1" Grid.Column="1" RenderTransformOrigin="0.789,0.499"/>
+        <Button Content="Vyberte .wav" HorizontalAlignment="Left" Height="40" Margin="31,0,0,0" VerticalAlignment="Center" Width="347" Click="Button_Click_2"/>
     </Grid>
 </Window>
+

@@ -23,23 +23,14 @@ namespace Appka
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // Configure open file dialog box
-            var dialog = new Microsoft.Win32.OpenFileDialog();
-            dialog.DefaultExt = ".wav"; // Default file extension
-            dialog.Filter = "Audio file format (.wav)|*.wav"; // Filter files by extension
-
-            // Show open file dialog box
-            bool? result = dialog.ShowDialog();
-
-            // Process open file dialog box results
-            if (result == true)
-            {
-                // Open document
-                string filename = dialog.FileName;
-                Logic.FrequencyData[] frequencyDatas = Logic.DoDFT(filename);
-            }
+                   
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             // Configure open file dialog box
             var dialog = new Microsoft.Win32.OpenFileDialog();
@@ -52,9 +43,7 @@ namespace Appka
             // Process open file dialog box results
             if (result == true)
             {
-                // Open document
-                string filename = dialog.FileName;
-                float[] frequencyDatas = Logic.DoFFT(filename);
+                
             }
         }
     }
