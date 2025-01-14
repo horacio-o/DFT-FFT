@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kbetNr0LOFU=",
+  "dgSpecHash": "FfvwKd+7K4g=",
   "success": true,
   "projectFilePath": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\Seminarni_Prace.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Tonda\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512"
+  ],
   "logs": []
 }

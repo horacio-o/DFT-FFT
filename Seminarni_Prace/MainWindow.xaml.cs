@@ -16,16 +16,17 @@ namespace Appka
     /// </summary>
     public partial class MainWindow : Window
     {
+        string? filepath;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_DFT(object sender, RoutedEventArgs e)
         {
-                   
+            Logic.FrequencyData[] frequencyDatas = Logic.DoDFT(filepath??throw new Exception ("Choose a file first"));
         }
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_FFT(object sender, RoutedEventArgs e)
         {
             
         }
@@ -43,7 +44,7 @@ namespace Appka
             // Process open file dialog box results
             if (result == true)
             {
-                
+                filepath = dialog.FileName;
             }
         }
     }
