@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Seminarni_Prace")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40bd345e59252ec8fd0a582904256be6e766050b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f97d4b55f64910e047641e68c008228b7d41b7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Seminarni_Prace")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Seminarni_Prace")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

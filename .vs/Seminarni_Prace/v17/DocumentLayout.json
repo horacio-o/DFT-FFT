@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Tonda\\Seminarka\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|c:\\users\\tonda\\seminarka\\seminarni_prace\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|solutionrelative:seminarni_prace\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|c:\\users\\tonda\\seminarka\\seminarni_prace\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|solutionrelative:seminarni_prace\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|c:\\users\\tonda\\seminarka\\seminarni_prace\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|solutionrelative:seminarni_prace\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|c:\\users\\tonda\\seminarka\\seminarni_prace\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C3FDF27-65A4-48ED-9FD0-3B99E8C9958D}|Seminarni_Prace\\Seminarni_Prace.csproj|solutionrelative:seminarni_prace\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Seminarni_Prace\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\MainWindow.xaml*",
-              "RelativeToolTip": "Seminarni_Prace\\MainWindow.xaml*",
+              "ToolTip": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\MainWindow.xaml",
+              "RelativeToolTip": "Seminarni_Prace\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-28T18:12:16.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "logic.cs",
               "DocumentMoniker": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\logic.cs",
               "RelativeDocumentMoniker": "Seminarni_Prace\\logic.cs",
               "ToolTip": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\logic.cs",
               "RelativeToolTip": "Seminarni_Prace\\logic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwGQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T18:12:33.612Z"
+              "WhenOpened": "2024-12-28T18:12:33.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Seminarni_Prace\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Tonda\\Seminarka\\Seminarni_Prace\\MainWindow.xaml.cs",
               "RelativeToolTip": "Seminarni_Prace\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAxwB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T18:14:29.561Z"
+              "WhenOpened": "2024-12-28T18:14:29.561Z",
+              "EditorCaption": ""
             }
           ]
         }

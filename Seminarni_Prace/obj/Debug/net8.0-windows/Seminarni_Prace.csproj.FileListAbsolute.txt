@@ -26,7 +26,6 @@ C:\Users\Tonda\Seminarka\Seminarni_Prace\bin\Debug\net8.0-windows\Seminarni_Prac
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarni_Prace_MarkupCompile.cache
-C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarni_Prace_MarkupCompile.lref
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarni_Prace.g.resources
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarni_Prace.GeneratedMSBuildEditorConfig.editorconfig
@@ -39,3 +38,6 @@ C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\refint\Seminar
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarni_Prace.pdb
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarni_Prace.genruntimeconfig.cache
 C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\ref\Seminarni_Prace.dll
+C:\Users\Tonda\Seminarka\Seminarni_Prace\bin\Debug\net8.0-windows\OxyPlot.dll
+C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarni_Prace.csproj.AssemblyReference.cache
+C:\Users\Tonda\Seminarka\Seminarni_Prace\obj\Debug\net8.0-windows\Seminarn.6FCB5C33.Up2Date

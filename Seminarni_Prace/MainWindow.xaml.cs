@@ -20,15 +20,18 @@ namespace Appka
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click_DFT(object sender, RoutedEventArgs e)
         {
             Logic.FrequencyData[] frequencyDatas = Logic.DoDFT(filepath??throw new Exception ("Choose a file first"));
+            testLabel.Content = string.Join(": ", frequencyDatas);
         }
         private void Button_Click_FFT(object sender, RoutedEventArgs e)
         {
-            
+            float[] frequencyDatas = Logic.DoFFT(filepath ?? throw new Exception("Choose a file first"));
+            testLabel.Content = string.Join(": " , frequencyDatas);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

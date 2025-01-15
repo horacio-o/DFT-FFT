@@ -14,7 +14,8 @@
         <Button Content="DFT" HorizontalAlignment="Left" Height="48" Margin="54,0,0,0" VerticalAlignment="Center" Width="146" Click="Button_Click_DFT" Grid.Column="1"/>
         <Button Content="FFT" HorizontalAlignment="Center" Margin="212,0,0,0" VerticalAlignment="Center" Height="48" Width="144" Click="Button_Click_FFT" Grid.Column="1" RenderTransformOrigin="0.789,0.499"/>
         <Button Content="Vyberte .wav" HorizontalAlignment="Left" Height="40" Margin="31,0,0,0" VerticalAlignment="Center" Width="347" Click="Button_Click_2"/>
-        
+        <Label x:Name="testLabel" Content="TONDA" HorizontalAlignment="Left" Margin="240,59,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
 
