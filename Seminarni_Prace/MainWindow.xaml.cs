@@ -20,7 +20,7 @@ namespace Appka
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
         private void Button_Click_DFT(object sender, RoutedEventArgs e)
@@ -32,6 +32,8 @@ namespace Appka
         {
             float[] frequencyDatas = Logic.DoFFT(filepath ?? throw new Exception("Choose a file first"));
             testLabel.Content = string.Join(": " , frequencyDatas);
+            Graph.Height = 100;
+            Graph.Width = 100;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
