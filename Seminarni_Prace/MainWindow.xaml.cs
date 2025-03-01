@@ -51,22 +51,22 @@ namespace Appka
         }
         private void DrawGrid(Grid grid, double wh)
         {
-            for (int i = 1; i < 21; i++)
+            for (int i = 1; i < 41; i++)
             {
                 Line line = new Line();
                 line.X1 = i * wh/40 - 1;
                 line.X2 = i * wh/40 - 1;
                 line.Y1 = 1;
-                line.Y2 = wh/2;
+                line.Y2 = wh;
                 line.Stroke = Brushes.Gray;
                 line.StrokeThickness = 2;
                 grid.Children.Add(line);
             }
-            for (int i = 1; i < 21; i++)
+            for (int i = 1; i < 41; i++)
             {
                 Line line = new Line();
                 line.X1 = 1;
-                line.X2 = wh / 2;
+                line.X2 = wh;
                 line.Y1 = i * wh/40 - 1;
                 line.Y2 = i * wh/40 - 1;
                 line.Stroke = Brushes.Gray;
@@ -74,8 +74,8 @@ namespace Appka
                 grid.Children.Add(line);
             }
             Line line2 = new Line();
-            line2.X1 = wh / 20 - 1;
-            line2.X2 = wh / 20 - 1;
+            line2.X1 = wh / 40 - 1;
+            line2.X2 = wh / 40 - 1;
             line2.Y1 = 1;
             line2.Y2 = wh / 2;
             line2.Stroke = Brushes.Black;
@@ -85,10 +85,26 @@ namespace Appka
             line3.Y1 = 18 * wh / 40 - 1;
             line3.Y2 = 18 * wh / 40 - 1;
             line3.X1 = 1;
-            line3.X2 = wh / 2;
+            line3.X2 = wh;
             line3.Stroke = Brushes.Black;
             line3.StrokeThickness = 2;
             grid.Children.Add(line3);
+        }
+        private void DrawValues(Grid grid, double wh, float[] value)
+        {
+            float interValue = 0;
+            double bound = 20000 / wh;
+            for (int i = 0; i < 20000; i = i + (int)bound)
+            {
+                float average = (value[i] + value[i + 1] + value[i + 2] + value[i + 3] + value[i + 4] + value[i + 5] + value[i + 6] + value[i + 7] + value[i + 8] + value[i + 9] + value[i + 10]) / 11;
+
+                for (int j = 0; j < bound; j++)
+                {
+                    interValue = interValue + value[j] / (int)bound;
+                }
+                // tady vykreslit čáru a ještě trochu upravit počet, protože nezačínáme na x = 0 ale jsme o jeden čtverečk posunuti
+
+            }
         }
     }
 }
