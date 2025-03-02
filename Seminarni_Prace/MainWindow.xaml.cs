@@ -25,13 +25,17 @@ namespace Appka
 
         private void Button_Click_DFT(object sender, RoutedEventArgs e)
         {
-            Logic.FrequencyData[] frequencyDatas = Logic.DoDFT(filepath??throw new Exception ("Choose a file first"));
+            float[] frequencyDatas = Logic.DoDFT(filepath??throw new Exception ("Choose a file first"));
+            DrawGrid(grid, grid.ActualWidth);
+            DrawValues(grid, grid.ActualWidth, frequencyDatas);
+            wav_button.Content = "NEMĚŇTE VELIKOST OKNA!!!!!!!!!!!!!!!!!!!!!!!!!";
         }
         private void Button_Click_FFT(object sender, RoutedEventArgs e)
         {
             float[] frequencyDatas = Logic.DoFFT(filepath ?? throw new Exception("Choose a file first"));
             DrawGrid(grid, grid.ActualWidth);
-            wav_button.Content = "NEMĚŇTE VELIKOST OKNA";
+            DrawValues(grid,grid.ActualWidth, frequencyDatas);
+            wav_button.Content = "NEMĚŇTE VELIKOST OKNA!!!!!!!!!!!!!!!!!!!!!!!!!";
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
@@ -62,7 +66,7 @@ namespace Appka
                 line.StrokeThickness = 2;
                 grid.Children.Add(line);
             }
-            for (int i = 1; i < 41; i++)
+            for (int i = 1; i < 21; i++)
             {
                 Line line = new Line();
                 line.X1 = 1;
@@ -90,20 +94,26 @@ namespace Appka
             line3.StrokeThickness = 2;
             grid.Children.Add(line3);
         }
-        private void DrawValues(Grid grid, double wh, float[] value)
+        private void DrawValues(Grid grid, double wh, float[] value) // vykreslí spektrum do pole
         {
             float interValue = 0;
             double bound = 20000 / wh;
             for (int i = 0; i < 20000; i = i + (int)bound)
             {
-                float average = (value[i] + value[i + 1] + value[i + 2] + value[i + 3] + value[i + 4] + value[i + 5] + value[i + 6] + value[i + 7] + value[i + 8] + value[i + 9] + value[i + 10]) / 11;
-
+                 // float average = (value[i] + value[i + 1] + value[i + 2] + value[i + 3] + value[i + 4] + value[i + 5] + value[i + 6] + value[i + 7] + value[i + 8] + value[i + 9] + value[i + 10]) / 11;
+                 // to je příklad pro 20000/1920 = cca 11 tudíž average 11 prvků
                 for (int j = 0; j < bound; j++)
                 {
                     interValue = interValue + value[j] / (int)bound;
                 }
-                // tady vykreslit čáru a ještě trochu upravit počet, protože nezačínáme na x = 0 ale jsme o jeden čtverečk posunuti
-
+                interValue = - Math.Abs(interValue);
+                Line line = new Line();
+                line.X1 = 18 * wh / 40 - 1;
+                line.Y1 = 18 * wh / 40 - 1;
+                line.X2 = 18 * wh / 40 - 1;
+                line.Y2 =  line.Y1 + interValue;
+                line.Stroke = Brushes.DeepSkyBlue;
+                grid.Children.Add(line);
             }
         }
     }

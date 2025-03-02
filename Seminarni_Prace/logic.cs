@@ -12,14 +12,19 @@ namespace Appka
 {
     internal class Logic
     {
-        public static FrequencyData[] DoDFT(string filename)
+        public static float[] DoDFT(string filename)
         {   
             using (FileStream stream = File.OpenRead(filename))
             {
                 BinaryReader reader = new BinaryReader(stream);
                 SampleArray sampleArray = InspectWav(reader);
                 FrequencyData[] fourie = DFT(sampleArray.samples, sampleArray.sampleRate);
-                return fourie;
+                float[] fourier = new float[fourie.Length];
+                for (int i = 0;i < fourie.Length;i++)
+                {
+                    fourier[i] = fourie[i].Amplitude;
+                }
+                return fourier;
             }
         }
         public static float[] DoFFT(string filename)

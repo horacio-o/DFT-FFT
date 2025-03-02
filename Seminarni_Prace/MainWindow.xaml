@@ -8,11 +8,11 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="16*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="DFT" HorizontalAlignment="Left" Height="40" Margin="448,0,0,0" VerticalAlignment="Center" Width="146" Click="Button_Click_DFT" Grid.Row="1"/>
-        <Button Content="FFT" HorizontalAlignment="Left" Margin="599,0,0,0" VerticalAlignment="Center" Height="40" Width="144" Click="Button_Click_FFT" RenderTransformOrigin="0.789,0.499" Grid.Row="1"/>
-        <Button x:Name="wav_button" Content="Vyberte .wav" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="348" Click="Button_Click_2" Margin="25,0,0,0" Grid.Row="1"/>
+        <Button Content="DFT" HorizontalAlignment="Center" Height="40" Margin="0,0,0,0" VerticalAlignment="Center" Width="146" Click="Button_Click_DFT" Grid.Row="1"/>
+        <Button Content="FFT" HorizontalAlignment="Right" Margin="227,0,0,0" VerticalAlignment="Center" Height="40" Width="144" Click="Button_Click_FFT" RenderTransformOrigin="0.789,0.499" Grid.Row="1"/>
+        <Button x:Name="wav_button" Content="Vyberte .wav" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="248" Click="Button_Click_2" Margin="36,0,0,0" Grid.Row="1"/>
     </Grid>
 </Window>
 
